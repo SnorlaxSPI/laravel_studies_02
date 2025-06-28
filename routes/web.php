@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-  echo "Welcome to the Home Page!";
-});
+Route::get('/', [MainController::class, 'showView']);
