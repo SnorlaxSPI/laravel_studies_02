@@ -1,5 +1,5 @@
 @extends('layouts/main_layout')
 @section('content')
-    <p class = "display-1 text-center">ADMIN</p>
-    </div>
+    <h1>{{ $name }}</h1>
+    <h1>{{ $description }}</h1>
 @endsection
