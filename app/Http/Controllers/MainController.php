@@ -9,7 +9,12 @@ class MainController extends Controller
 {
     public function showView(): View
     {
-
-        return view('home', ['name' => 'John Doe']);
+        $data = [
+            'value' => 100,
+            'cities' => ['Bauru', 'Londrina', 'Araraquara'],
+            'name' => ['Alice', 'Bob', 'Charlie'],
+            'indice' => [1, 2, 3],
+        ];
+        return view('home', $data);
     }
 }
